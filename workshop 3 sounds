@@ -1,0 +1,35 @@
+var mySound;
+var mySoundTwo;
+var mySoundThree;
+
+function preload() {
+  mySound = loadSound('Porter_Robinson_Madeon_-_Shelter_Official_Audio[Mp3Converter.net].mp3');
+  mySoundTwo = loadSound('fire.mp3');
+  mySoundThree = loadSound('water.mp3');
+}
+
+function setup() { 
+  mySound.setVolume(0.1);
+  mySound.play();
+  createCanvas(100, 100);
+}
+
+function draw() {
+  if (mySound.isPlaying()) {
+    background(240);
+  } else {
+    background(120);
+  }
+}
+
+function keyPressed() {
+  if (key == 'A') {
+    mySound.play();
+  } 
+  if (key == 'S') {
+    mySoundTwo.play();
+  }
+  if (key == 'D') {
+    mySoundThree.play();
+  }
+}
