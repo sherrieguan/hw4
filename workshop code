@@ -1,3 +1,5 @@
+// Will only draw when the color key is pressed
+
 function setup() {
   createCanvas(400, 400);
   background(255);
