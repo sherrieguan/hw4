@@ -11,6 +11,7 @@ var playingD = false;
 var playingF = false;
 
 function setup() {
+  createCanvas (100, 100);
   backgroundColor = color(255, 0, 255);
   textAlign(CENTER);
   
