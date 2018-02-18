@@ -1,6 +1,6 @@
 // I created a musical instrument to play my all time favorite song, Shelter by Porter Robinson and Madeon
 // The main melody and intro use five notes, C, A, G, D, and E.
-// When playing all keys A, S, D, F, and G on your keyboard, the Shelter symbol appears!
+// When playing all keys A, S, D, F, and G on your keyboard as chord, the Shelter symbol appears!
 // If you aren't familiar with the song, refer to the official audio here: https://www.youtube.com/watch?v=HQnC1UHBvWA
 // How to play the melody from Shelter using your keyboard:
 // Play: A S D A
