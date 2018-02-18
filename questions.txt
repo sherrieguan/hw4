@@ -1,0 +1,45 @@
+1. What is an object?
+- A collection of name value pairs
+- Objects have data inside of it
+  - For example: an x, an y, a diameter
+  - How you get data for almost EVERYTHING in java
+- Helps you group multiple variables
+- Syntax is like:
+  var circle= {
+    x: 0,
+    y: 0,
+    diameter: 50
+  };
+
+
+2. How do you access a property of an object?
+- Refer back to the var object with a dot syntax
+  - For example:
+  ellipse(circle.x);
+
+
+Arrays:
+- An array is a list of values in separated by a comma
+- similar to an object
+i.e.
+var num = 5;
+var nums = [5, 3];
+
+
+3. What is the index of the first item in an array?
+- index is 0
+- Always need to start counting the elements from 0 in code
+
+
+4. What syntax can you use to get the third item in an array?
+- Refer to the array name and index
+- i.e. nums[2]
+- nums would refer to the whole array
+- i.e. text(words[index], 12, 200); ... index = index + 1;
+
+5. How do you use a variable and a loop to get every item in an array?
+- Use a for loop that uses the var i in the function from your array
+- You can use an array to have many elements and apply the same action to all elements
+- i.e. for (var i = 0; i < 4; i++) {
+    ellipse(i * 100 + 100, 200, nums[i], nums[i]);
+  }
