@@ -1,6 +1,7 @@
 // I created a musical instrument to play my all time favorite song, Shelter by Porter Robinson and Madeon
-// The main melody and intro use five notes, C, A, G, D, and E.
-// When playing all keys A, S, D, F, and G on your keyboard as chord, the Shelter symbol appears!
+// The main melody and intro use five notes, C (do), A (la), G (sol), D (re), and E (mi)
+// The corresponding keys on your keyboard are A, S, D, F, and G
+// When playing all five keys on your keyboard as chord, the Shelter symbol appears!
 // If you aren't familiar with the song, refer to the official audio here: https://www.youtube.com/watch?v=HQnC1UHBvWA
 // How to play the melody from Shelter using your keyboard:
 // Play: A S D A
@@ -25,7 +26,7 @@ var playingF = false;
 var playingG = false;
 
 function setup() {
-  createCanvas (100, 100);
+  createCanvas (500, 500);
   backgroundColor = color(255, 0, 255);
   textAlign(CENTER);
   
@@ -99,41 +100,41 @@ function draw() {
   if (playingA) {
     fill(0, 153, 115);
     noStroke();
-    ellipse(50, 50, 90, 90);
+    ellipse(250, 250,450, 450);
   }
   if (playingS) {
     fill(0);
     noStroke();
-    ellipse(50, 50, 75, 75);
+    ellipse(250, 250, 375, 375);
     fill(0, 153, 115);
-    triangle(50, 20, 65, 35, 35, 35);
+    triangle(250, 100, 325, 175, 175, 175);
     fill(0);
-    triangle(50, 26, 65, 41, 35, 41);
+    triangle(250, 130, 325, 205, 175, 205);
     fill(0, 153, 115);
-    triangle(50, 80, 65, 65, 35, 65);
+    triangle(250, 400, 325, 325, 175, 325);
     fill(0);
-    triangle(50, 74, 65, 59, 35, 59);
+    triangle(250, 370, 325, 295, 175, 295);
   }
   if (playingD) {
     fill(0, 153, 115);
     noStroke();
-    quad(50, 35, 35, 50, 50, 65, 65, 50);
+    quad(250, 175, 175, 250, 250, 325, 325, 250);
     fill(0);
-    quad(50, 40, 40, 50, 50, 60, 60, 50);
+    quad(250, 200, 200, 250, 250, 300, 300, 250);
     fill(0, 153, 115);
-    quad(50, 45, 45, 50, 50, 55, 55, 50);
+    quad(250, 225, 225, 250, 250, 275, 275, 250);
   }
   if (playingF) {
     fill(0, 153, 115);
     noStroke();
-    rect(18, 43, 15, 5);
-    rect(18, 53, 15, 5);
+    rect(90, 215, 75, 25);
+    rect(90, 265, 75, 25);
   }
   if (playingG) {
     fill(0, 153, 115);
     noStroke();
-    rect(67, 43, 15, 5);
-    rect(67, 53, 15, 5);
+    rect(335, 215, 75, 25);
+    rect(335, 265, 75, 25);
   }
 }
 
